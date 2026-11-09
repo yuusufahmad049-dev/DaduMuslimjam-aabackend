@@ -1,0 +1,8 @@
+{
+  "name": "dadu-jamaa-system",
+  "version": "1.0.0",
+  "description": "Dadu Muslim Students Jam'aa Sector - member management system",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=22.13" }
+}

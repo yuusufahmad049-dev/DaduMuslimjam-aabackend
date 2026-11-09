@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dadu Muslim Students Jam’aa Sector</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header>
+<div><h1>Dadu Muslim Students Jam’aa Sector</h1><small id="who">Viewing only (not logged in)</small></div>
+<div><button class="btn w" id="cp" style="display:none">Change PIN</button> <button class="btn w" id="lb"></button></div>
+</header>
+<div class="wrap"><nav id="nav"></nav><main id="main"></main></div>
+
+<div class="modal" id="m1"><div class="box"><h3 style="margin:0">Login (authorized only)</h3>
+<label>Sector</label><select id="ls"></select>
+<label>PIN</label><input id="lp" type="password" inputmode="numeric">
+<div id="le" style="color:var(--dn);font-size:13px;margin-top:6px"></div>
+<div class="row"><button class="btn o" onclick="cl('m1')">Cancel</button><button class="btn" onclick="login()">Login</button></div></div></div>
+
+<div class="modal" id="m2"><div class="box"><h3 style="margin:0" id="mt">Member</h3>
+<label>Full name</label><input id="fn">
+<div class="g2"><div><label>Department</label><input id="fd"></div><div><label>Year</label><input id="fy"></div></div>
+<label>From (town/district)</label><input id="ff">
+<label>Phone number</label><input id="fp" type="tel">
+<div class="row"><button class="btn o" onclick="cl('m2')">Cancel</button><button class="btn" onclick="saveM()">Save</button></div></div></div>
+
+<div class="modal" id="m3"><div class="box"><h3 style="margin:0" id="st">Subleader</h3>
+<label>Name</label><input id="sn"><label>Phone</label><input id="sp" type="tel">
+<div class="row"><button class="btn o" onclick="cl('m3')">Cancel</button><button class="btn" onclick="saveS()">Save</button></div></div></div>
+
+<script src="script.js"></script></body></html>

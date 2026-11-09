@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: dadu-jamaa-system
+    runtime: node
+    plan: starter
+    buildCommand: echo "no build needed"
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: DB_PATH
+        value: /var/data/jamaa.db
+    disk:
+      name: jamaa-data
+      mountPath: /var/data
+      sizeGB: 1
